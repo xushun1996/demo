@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person = {
+            name: '张三',
+            age: 25,
+            sex: '男'
+        }
+        // 输出对象的名字 张三
+        console.log(person.name)
+        console.log(person['name'])
+         for(let k in person){
+            //得到的带字符串的属性名
+            // k === 'name' === 'age' === 'sex'
+            console.log(k)
+            console.log(person[k])
+         }
+    </script>
+</body>
+</html>
